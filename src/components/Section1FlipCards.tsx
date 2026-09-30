@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  * 
- * PHẦN 1: NHỮNG CON SỐ TĂNG TRƯỜNG ẤN TƯỢNG - Tích hợp 3D Tilt Effect & CountUp
+ * PHẦN 1: NHỮNG CON SỐ TĂNG TRƯỜNG ẤN TƯỢNG - Nền xanh lá chữ vàng ánh kim quét nhẹ
  */
 
 import React from 'react';
@@ -28,7 +28,7 @@ export const Section1FlipCards: React.FC<Section1FlipCardsProps> = ({ box2Flippe
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
-        {/* Header với Gradient Xanh Lục Sang Trọng */}
+        {/* Header Nền Xanh Lá Chữ Vàng Ánh Kim Quét Nhẹ */}
         <motion.div
           className="text-center mb-8 py-2 overflow-visible"
           initial={{ opacity: 0, scale: 0.94, y: 15 }}
@@ -37,11 +37,13 @@ export const Section1FlipCards: React.FC<Section1FlipCardsProps> = ({ box2Flippe
           transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.h2
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.03 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight uppercase inline-block text-emerald-800 py-3 px-2 leading-relaxed"
+            className="bg-gradient-to-r from-emerald-900 via-teal-900 to-emerald-950 border border-amber-300/40 shadow-xl rounded-2xl sm:rounded-full py-3.5 px-6 sm:px-10 inline-block"
           >
-            NHỮNG CON SỐ TĂNG TRƯỞNG ẤN TƯỢNG
+            <span className="shimmer-gold-text text-xl sm:text-2xl lg:text-3xl font-black tracking-wider uppercase leading-relaxed block">
+              NHỮNG CON SỐ TĂNG TRƯỜNG ẤN TƯỢNG
+            </span>
           </motion.h2>
         </motion.div>
 

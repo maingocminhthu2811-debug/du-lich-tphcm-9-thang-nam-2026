@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  * 
  * PHẦN 3: ĐỊNH HƯỚNG 3 THÁNG CUỐI NĂM
- * - Thể hiện nội dung dạng danh sách (list) gạch đầu dòng & Tích hợp 3D Tilt Effect
+ * - Nền xanh lá chữ vàng ánh kim quét nhẹ
  */
 
 import React from 'react';
@@ -69,7 +69,7 @@ export const Section3Checklist: React.FC = () => {
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         
-        {/* Section Header */}
+        {/* Section Header Nền Xanh Lá Chữ Vàng Ánh Kim Quét Nhẹ */}
         <motion.div
           className="text-center mb-6 py-2 overflow-visible"
           initial={{ opacity: 0, scale: 0.94, y: 15 }}
@@ -78,11 +78,13 @@ export const Section3Checklist: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.h2
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.03 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight uppercase inline-block text-emerald-800 py-3 px-2 leading-relaxed"
+            className="bg-gradient-to-r from-emerald-900 via-teal-900 to-emerald-950 border border-amber-300/40 shadow-xl rounded-2xl sm:rounded-full py-3.5 px-6 sm:px-10 inline-block"
           >
-            ĐỊNH HƯỚNG 3 THÁNG CUỐI NĂM
+            <span className="shimmer-gold-text text-xl sm:text-2xl lg:text-3xl font-black tracking-wider uppercase leading-relaxed block">
+              ĐỊNH HƯỚNG 3 THÁNG CUỐI NĂM
+            </span>
           </motion.h2>
         </motion.div>
 

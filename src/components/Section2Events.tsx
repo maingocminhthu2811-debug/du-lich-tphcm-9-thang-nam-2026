@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  * 
  * PHẦN 2: SỰ KIỆN VÀ SẢN PHẨM ĐỘT PHÁ
- * - Tích hợp 3D Tilt Effect & CountUp cho các số liệu sự kiện
+ * - Nền xanh lá chữ vàng ánh kim quét nhẹ
  */
 
 import React from 'react';
@@ -79,7 +79,7 @@ export const Section2Events: React.FC = () => {
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         
-        {/* Section Main Header */}
+        {/* Section Main Header Nền Xanh Lá Chữ Vàng Ánh Kim Quét Nhẹ */}
         <motion.div
           className="text-center mb-10 py-2 overflow-visible"
           initial={{ opacity: 0, scale: 0.94, y: 15 }}
@@ -88,11 +88,13 @@ export const Section2Events: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.h2
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.03 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight uppercase inline-block text-emerald-800 py-3 px-2 leading-relaxed"
+            className="bg-gradient-to-r from-emerald-900 via-teal-900 to-emerald-950 border border-amber-300/40 shadow-xl rounded-2xl sm:rounded-full py-3.5 px-6 sm:px-10 inline-block"
           >
-            SỰ KIỆN VÀ SẢN PHẨM ĐỘT PHÁ
+            <span className="shimmer-gold-text text-xl sm:text-2xl lg:text-3xl font-black tracking-wider uppercase leading-relaxed block">
+              SỰ KIỆN VÀ SẢN PHẨM ĐỘT PHÁ
+            </span>
           </motion.h2>
         </motion.div>
 
@@ -216,7 +218,7 @@ export const Section2Events: React.FC = () => {
           </TiltCard>
 
           {/* ========================================================================= */}
-          {/* SỰ KIỆN 3: CHUỖI HOẠT ĐỘNG KỲ NGHĨ LỄ 2-9 */}
+          {/* SỰ KIỆN 3: CHUỖI HOẠT ĐỘNG KỲ NGHỈ LỄ 2-9 */}
           {/* ========================================================================= */}
           <TiltCard tiltMaxAngle={6} scaleOnHover={1.015}>
             <motion.div
@@ -229,7 +231,7 @@ export const Section2Events: React.FC = () => {
               {/* Title */}
               <div className="text-center py-2 px-2 overflow-visible">
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-black uppercase text-center text-emerald-800 tracking-wide leading-relaxed py-2">
-                  CHUỖI HOẠT ĐỘNG KỲ NGHĨ LỄ 2-9
+                  CHUỖI HOẠT ĐỘNG KỲ NGHỈ LỄ 2-9
                 </h3>
               </div>
 
