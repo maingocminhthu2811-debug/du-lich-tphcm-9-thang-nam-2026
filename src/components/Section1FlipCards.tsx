@@ -42,7 +42,7 @@ export const Section1FlipCards: React.FC<Section1FlipCardsProps> = ({ box2Flippe
             className="bg-gradient-to-r from-emerald-900 via-teal-900 to-emerald-950 border border-amber-300/40 shadow-xl rounded-2xl sm:rounded-full py-3.5 px-6 sm:px-10 inline-block"
           >
             <span className="shimmer-gold-text text-xl sm:text-2xl lg:text-3xl font-black tracking-wider uppercase leading-relaxed block">
-              NHỮNG CON SỐ TĂNG TRƯỜNG ẤN TƯỢNG
+              NHỮNG CON SỐ TĂNG TRƯỞNG ẤN TƯỢNG
             </span>
           </motion.h2>
         </motion.div>
