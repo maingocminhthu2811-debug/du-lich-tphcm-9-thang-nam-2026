@@ -99,7 +99,7 @@ export const HeroSection: React.FC = () => {
 
           {/* Cluster 2: BỨC PHÁ TĂNG TRƯỜNG */}
           <div className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 tracking-tight uppercase drop-shadow-[0_4px_18px_rgba(251,191,36,0.6)] my-1 py-1 px-2 leading-snug">
-            BỨC PHÁ TĂNG TRƯỜNG
+            BỨC PHÁ TĂNG TRƯỞNG
           </div>
 
           {/* Cluster 3: 9 THÁNG ĐẦU NĂM 2026 */}

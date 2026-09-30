@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  * 
  * PHẦN 3: ĐỊNH HƯỚNG 3 THÁNG CUỐI NĂM
- * - Tích hợp CountUp cho số năm và lần tổ chức
+ * - Thể hiện nội dung dạng danh sách (list) gạch đầu dòng & Tích hợp 3D Tilt Effect
  */
 
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckSquare } from 'lucide-react';
-import { CountUp } from './CountUp';
+import { TiltCard } from './TiltCard';
 
 // Component Icon CheckSquare Động Đồng Nhất
 const AnimatedCheckBadge: React.FC<{ index: number }> = ({ index }) => {
@@ -86,72 +86,120 @@ export const Section3Checklist: React.FC = () => {
           </motion.h2>
         </motion.div>
 
-        {/* Strategic Infographic Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 mt-4">
+        {/* Strategic Infographic Cards với 3D Tilt Effect */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 mt-4 items-stretch">
           
           {/* Card 1 */}
-          <motion.div
-            className="info-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-600 bg-white flex flex-col justify-between shadow-xs"
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <div className="flex items-start gap-3.5 sm:gap-4">
-              <AnimatedCheckBadge index={0} />
-              <div className="text-base sm:text-lg font-semibold text-slate-900 leading-relaxed pt-0.5">
-                Tiếp tục bổ sung, hoàn thiện “Đề án phát triển du lịch đến năm <strong>2030</strong>”
+          <TiltCard className="h-full">
+            <motion.div
+              className="info-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-600 bg-white flex flex-col justify-between shadow-xs h-full"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <div className="flex items-start gap-3.5 sm:gap-4">
+                <AnimatedCheckBadge index={0} />
+                <div className="text-base sm:text-lg font-bold text-slate-900 leading-relaxed pt-0.5">
+                  Tiếp tục bổ sung, hoàn thiện “Đề án phát triển du lịch đến năm <strong className="text-emerald-700 font-extrabold font-num">2030</strong>”
+                </div>
               </div>
-            </div>
-          </motion.div>
-
-          {/* Card 2 */}
-          <motion.div
-            className="info-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-600 bg-white flex flex-col justify-between shadow-xs"
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <div className="flex items-start gap-3.5 sm:gap-4">
-              <AnimatedCheckBadge index={1} />
-              <div className="text-base sm:text-lg font-semibold text-slate-900 leading-relaxed pt-0.5">
-                Phát triển sản phẩm du lịch đặc trưng: ngắm TPHCM từ trên cao bằng trực thăng, du lịch đường thủy, du lịch MICE, du lịch sinh thái, du lịch biển đảo, du lịch kết hợp y tế.
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </TiltCard>
 
           {/* Card 3 */}
-          <motion.div
-            className="info-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-600 bg-white flex flex-col justify-between shadow-xs"
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.26, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <div className="flex items-start gap-3.5 sm:gap-4">
-              <AnimatedCheckBadge index={2} />
-              <div className="text-base sm:text-lg font-semibold text-slate-900 leading-relaxed pt-0.5">
-                Đẩy mạnh quảng bá du lịch tại thị trường quốc tế
+          <TiltCard className="h-full">
+            <motion.div
+              className="info-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-600 bg-white flex flex-col justify-between shadow-xs h-full"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.26, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <div className="flex items-start gap-3.5 sm:gap-4">
+                <AnimatedCheckBadge index={2} />
+                <div className="text-base sm:text-lg font-bold text-slate-900 leading-relaxed pt-0.5">
+                  Đẩy mạnh quảng bá du lịch tại thị trường quốc tế
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </TiltCard>
 
-          {/* Card 4 */}
-          <motion.div
-            className="info-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-600 bg-white flex flex-col justify-between shadow-xs"
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.34, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <div className="flex items-start gap-3.5 sm:gap-4">
-              <AnimatedCheckBadge index={3} />
-              <div className="text-base sm:text-lg font-semibold text-slate-900 leading-relaxed pt-0.5">
-                Sự kiện lớn: Tuần lễ Du lịch TPHCM lần thứ <strong> 6</strong>, Giải Marathon Quốc tế TPHCM Lần thứ <strong>9 </strong>.
+          {/* Card 2: Phát triển sản phẩm du lịch đặc trưng (Dạng List) */}
+          <TiltCard className="h-full">
+            <motion.div
+              className="info-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-600 bg-white flex flex-col justify-between shadow-xs h-full"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <div className="flex items-start gap-3.5 sm:gap-4">
+                <AnimatedCheckBadge index={1} />
+                <div className="text-base sm:text-lg font-bold text-slate-900 leading-relaxed pt-0.5 w-full">
+                  <div className="text-slate-900 font-bold mb-1.5">
+                    Phát triển sản phẩm du lịch đặc trưng:
+                  </div>
+                  <ul className="space-y-1.5 text-slate-800 font-medium text-sm sm:text-base">
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                      <span>Ngắm TPHCM từ trên cao bằng trực thăng</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                      <span>Du lịch đường thủy</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                      <span>Du lịch MICE</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                      <span>Du lịch sinh thái</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                      <span>Du lịch biển đảo</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                      <span>Du lịch kết hợp y tế</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </TiltCard>
+
+          {/* Card 4: Sự kiện lớn (Dạng List) */}
+          <TiltCard className="h-full">
+            <motion.div
+              className="info-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-600 bg-white flex flex-col justify-between shadow-xs h-full"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.34, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <div className="flex items-start gap-3.5 sm:gap-4">
+                <AnimatedCheckBadge index={3} />
+                <div className="text-base sm:text-lg font-bold text-slate-900 leading-relaxed pt-0.5 w-full">
+                  <div className="text-slate-900 font-bold mb-1.5">
+                    Các sự kiện lớn:
+                  </div>
+                  <ul className="space-y-2 text-slate-800 font-medium text-sm sm:text-base">
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                      <span>Tuần lễ Du lịch TPHCM lần thứ <strong className="text-emerald-700 font-extrabold font-num">6</strong></span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                      <span>Giải Marathon Quốc tế TPHCM Lần thứ <strong className="text-emerald-700 font-extrabold font-num">9</strong></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+          </TiltCard>
 
         </div>
       </div>
