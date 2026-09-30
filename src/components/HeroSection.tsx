@@ -119,7 +119,7 @@ export const HeroSection: React.FC = () => {
               <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
             </div>
             <div className="text-lg sm:text-2xl md:text-3xl font-black text-white font-num tracking-tight">
-              282.696 tỷ
+              282.696 tỷ đồng
             </div>
             <div className="text-xs sm:text-sm text-amber-300 font-bold flex items-center gap-1 mt-0.5">
               <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> +43.4 % so với 2025
