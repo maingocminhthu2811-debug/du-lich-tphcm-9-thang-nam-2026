@@ -41,7 +41,7 @@ export const Section1FlipCards: React.FC<Section1FlipCardsProps> = ({ box2Flippe
             transition={{ type: 'spring', stiffness: 300 }}
             className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight uppercase inline-block text-emerald-800 py-3 px-2 leading-relaxed"
           >
-            NHỮNG CON SỐ TĂNG TRƯỜNG ẤN TƯỢNG
+            NHỮNG CON SỐ TĂNG TRƯỞNG ẤN TƯỢNG
           </motion.h2>
         </motion.div>
 
