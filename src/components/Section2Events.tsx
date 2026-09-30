@@ -77,7 +77,7 @@ export const Section2Events: React.FC = () => {
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Main Header Nền Xanh Lá Chữ Vàng Ánh Kim Quét Nhẹ */}
         <motion.div
