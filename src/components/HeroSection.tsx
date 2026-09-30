@@ -122,7 +122,7 @@ export const HeroSection: React.FC = () => {
               282.696 tỷ đồng
             </div>
             <div className="text-xs sm:text-sm text-amber-300 font-bold flex items-center gap-1 mt-0.5">
-              <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> +43.4 % so với 2025
+              <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> +43.4 % so với cùng kỳ 2025
             </div>
           </div>
 
@@ -136,7 +136,7 @@ export const HeroSection: React.FC = () => {
               8.517.428 lượt
             </div>
             <div className="text-xs sm:text-sm text-teal-300 font-bold flex items-center gap-1 mt-0.5">
-              <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> +34.5% so với 2025
+              <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> +34.5% so với cùng kỳ 2025
             </div>
           </div>
 
