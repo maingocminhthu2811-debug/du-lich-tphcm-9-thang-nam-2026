@@ -26,22 +26,22 @@ export const HeroSection: React.FC = () => {
     sound.playClick();
   };
 
-  // 15 thick & prominent light rays distributed across the banner
+  // 15 refined light rays distributed across the banner
   const lightRays = [
-    { left: '4%', width: 'w-1.5', delay: '0s', duration: '3.4s' },
-    { left: '11%', width: 'w-2', delay: '0.8s', duration: '4.2s' },
-    { left: '18%', width: 'w-1', delay: '1.5s', duration: '3.6s' },
-    { left: '25%', width: 'w-2.5', delay: '0.3s', duration: '4.5s' },
-    { left: '32%', width: 'w-1.5', delay: '2.1s', duration: '3.8s' },
-    { left: '39%', width: 'w-2', delay: '1.1s', duration: '4.0s' },
-    { left: '46%', width: 'w-2.5', delay: '0.6s', duration: '3.5s' },
-    { left: '53%', width: 'w-1.5', delay: '2.4s', duration: '4.3s' },
-    { left: '60%', width: 'w-2', delay: '1.7s', duration: '3.7s' },
-    { left: '67%', width: 'w-2.5', delay: '0.2s', duration: '4.6s' },
-    { left: '74%', width: 'w-1.5', delay: '1.3s', duration: '3.9s' },
-    { left: '81%', width: 'w-2', delay: '2.8s', duration: '4.2s' },
-    { left: '87%', width: 'w-2.5', delay: '0.9s', duration: '3.6s' },
-    { left: '93%', width: 'w-1.5', delay: '2.0s', duration: '4.4s' },
+    { left: '4%', width: 'w-1', delay: '0s', duration: '3.4s' },
+    { left: '11%', width: 'w-1.5', delay: '0.8s', duration: '4.2s' },
+    { left: '18%', width: 'w-0.5', delay: '1.5s', duration: '3.6s' },
+    { left: '25%', width: 'w-1.5', delay: '0.3s', duration: '4.5s' },
+    { left: '32%', width: 'w-1', delay: '2.1s', duration: '3.8s' },
+    { left: '39%', width: 'w-1.5', delay: '1.1s', duration: '4.0s' },
+    { left: '46%', width: 'w-1.5', delay: '0.6s', duration: '3.5s' },
+    { left: '53%', width: 'w-1', delay: '2.4s', duration: '4.3s' },
+    { left: '60%', width: 'w-1.5', delay: '1.7s', duration: '3.7s' },
+    { left: '67%', width: 'w-1.5', delay: '0.2s', duration: '4.6s' },
+    { left: '74%', width: 'w-1', delay: '1.3s', duration: '3.9s' },
+    { left: '81%', width: 'w-1.5', delay: '2.8s', duration: '4.2s' },
+    { left: '87%', width: 'w-1.5', delay: '0.9s', duration: '3.6s' },
+    { left: '93%', width: 'w-1', delay: '2.0s', duration: '4.4s' },
   ];
 
   return (
