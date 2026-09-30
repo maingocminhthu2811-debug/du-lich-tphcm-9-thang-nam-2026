@@ -1,0 +1,7 @@
+{
+  "name": "Infographic Du Lịch TPHCM 2026",
+  "description": "Infographic Tương tác & Trực quan hóa Dữ liệu: Du Lịch TPHCM Bức Phá Tăng Trưởng 9 Tháng Đầu Năm 2026",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
